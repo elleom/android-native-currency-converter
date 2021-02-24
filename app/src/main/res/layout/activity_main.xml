@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/ib_dinamarca"
+        android:layout_width="68dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="60dp"
+        android:background="@color/colorAccent"
+        android:contentDescription="DKK"
+        android:onClick="onClick"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/ib_noruega"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/danish_flag" />
+
+    <ImageButton
+        android:id="@+id/ib_reinoUnido"
+        android:layout_width="68dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorAccent"
+        android:contentDescription="GBP"
+        android:onClick="onClick"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/ib_usa"
+        app:layout_constraintEnd_toStartOf="@+id/ib_japon"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ib_usa"
+        app:layout_constraintTop_toBottomOf="@+id/ib_noruega"
+        app:srcCompat="@drawable/gran_bretana" />
+
+    <ImageButton
+        android:id="@+id/ib_india"
+        android:layout_width="68dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorAccent"
+        android:contentDescription="INR"
+        android:onClick="onClick"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/ib_sudafrica"
+        app:layout_constraintStart_toEndOf="@+id/ib_sudafrica"
+        app:layout_constraintTop_toBottomOf="@+id/ib_suecia"
+        app:srcCompat="@drawable/india" />
+
+    <ImageButton
+        android:id="@+id/ib_suecia"
+        android:layout_width="68dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorAccent"
+        android:contentDescription="SEK"
+        android:onClick="onClick"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/ib_japon"
+        app:layout_constraintStart_toEndOf="@+id/ib_japon"
+        app:layout_constraintTop_toBottomOf="@+id/ib_china"
+        app:srcCompat="@drawable/suecia" />
+
+    <ImageButton
+        android:id="@+id/ib_sudafrica"
+        android:layout_width="68dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorAccent"
+        android:contentDescription="ZAR"
+        android:onClick="onClick"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/ib_rusia"
+        app:layout_constraintEnd_toStartOf="@+id/ib_india"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ib_rusia"
+        app:layout_constraintTop_toBottomOf="@+id/ib_japon"
+        app:srcCompat="@drawable/sudafrica" />
+
+    <ImageButton
+        android:id="@+id/ib_brasil"
+        android:layout_width="68dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="24dp"
+        android:background="@color/colorAccent"
+        android:contentDescription="BRL"
+        android:onClick="onClick"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/ib_noruega"
+        app:layout_constraintEnd_toStartOf="@+id/ib_china"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ib_noruega"
+        app:srcCompat="@drawable/brasil" />
+
+    <ImageButton
+        android:id="@+id/ib_rusia"
+        android:layout_width="68dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorAccent"
+        android:contentDescription="RUB"
+        android:onClick="onClick"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/ib_canada"
+        app:layout_constraintEnd_toStartOf="@+id/ib_sudafrica"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ib_canada"
+        app:layout_constraintTop_toBottomOf="@+id/ib_reinoUnido"
+        app:srcCompat="@drawable/rusia" />
+
+    <ImageButton
+        android:id="@+id/ib_noruega"
+        android:layout_width="68dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="24dp"
+        android:background="@color/colorAccent"
+        android:contentDescription="NOK"
+        android:onClick="onClick"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/ib_dinamarca"
+        app:layout_constraintEnd_toStartOf="@+id/ib_brasil"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ib_dinamarca"
+        app:srcCompat="@drawable/norway_flag" />
+
+    <ImageButton
+        android:id="@+id/ib_japon"
+        android:layout_width="68dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorAccent"
+        android:contentDescription="JPY"
+        android:onClick="onClick"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/ib_reinoUnido"
+        app:layout_constraintEnd_toStartOf="@+id/ib_suecia"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ib_reinoUnido"
+        app:layout_constraintTop_toBottomOf="@+id/ib_brasil"
+        app:srcCompat="@drawable/japon" />
+
+    <ImageButton
+        android:id="@+id/ib_canada"
+        android:layout_width="68dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorAccent"
+        android:contentDescription="CAD"
+        android:onClick="onClick"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/ib_rusia"
+        app:layout_constraintStart_toStartOf="@+id/ib_usa"
+        app:layout_constraintTop_toBottomOf="@+id/ib_usa"
+        app:srcCompat="@drawable/canada" />
+
+    <ImageButton
+        android:id="@+id/ib_usa"
+        android:layout_width="68dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorAccent"
+        android:contentDescription="USD"
+        android:onClick="onClick"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toStartOf="@+id/ib_reinoUnido"
+        app:layout_constraintStart_toStartOf="@+id/ib_dinamarca"
+        app:layout_constraintTop_toBottomOf="@+id/ib_dinamarca"
+        app:srcCompat="@drawable/estados_unidos" />
+
+    <ImageButton
+        android:id="@+id/ib_china"
+        android:layout_width="68dp"
+        android:layout_height="66dp"
+        android:layout_marginStart="24dp"
+        android:background="@color/colorAccent"
+        android:contentDescription="CNY"
+        android:onClick="onClick"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="@+id/ib_brasil"
+        app:layout_constraintStart_toEndOf="@+id/ib_brasil"
+        app:srcCompat="@drawable/china" />
+
+    <Button
+        android:id="@+id/bt_convertir"
+        android:layout_width="152dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="16dp"
+        android:onClick="calcula"
+        android:text="Convertir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/et_valor"
+        android:layout_width="217dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:hint="Introduce el importe"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/tv_tasaConversion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_currencyShort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_valor"
+        app:layout_constraintEnd_toEndOf="@+id/bt_lista"
+        app:layout_constraintStart_toEndOf="@+id/et_valor" />
+
+    <TextView
+        android:id="@+id/tv_tasaConversion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/bt_convertir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona la moneda a convertir"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/ib_brasil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/sw_euro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+
+        android:onClick="switchControl"
+        android:text="Convertir €"
+        app:layout_constraintEnd_toEndOf="@+id/ib_india"
+        app:layout_constraintTop_toBottomOf="@+id/ib_india" />
+
+    <Button
+        android:id="@+id/bt_lista"
+        android:layout_width="152dp"
+        android:layout_height="65dp"
+        android:layout_marginEnd="16dp"
+        android:onClick="iniciarSegundaActividad"
+        android:text="Ver Cotizaciones"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_convertir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.866"
+        app:layout_constraintStart_toEndOf="@+id/bt_convertir" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
