@@ -6,6 +6,6 @@ Created Nov/2019
 #### elleom
 
 ##### Curso: Desarrollo de Aplicaciones multimedia y dispositivos moviles
-##### Course: Multimedia and movile devices app development
+##### Course: Multimedia and mobile devices app development
 
 ![Screenshot](/images/mainActivity.png)
